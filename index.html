@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CAN Mali Müşavirlik - Vergi, muhasebe ve mali danışmanlık hizmetleri. İstanbul'da profesyonel SMMM hizmeti.">
+<title>CAN Mali Müşavirlik</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;color:#0F172A;background:#fff}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{background:#1B2B4B;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-box{background:white;border-radius:8px;padding:5px 12px;font-size:15px;font-weight:700;color:#1B2B4B}
+.logo-text{color:white;font-size:14px;font-weight:500}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:rgba(255,255,255,0.8);font-size:14px;transition:color 0.2s}
+.nav-links a:hover{color:white}
+.nav-wa{background:#25D366;color:white!important;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:2px;background:white;border-radius:2px;display:block}
+@media(max-width:640px){
+  .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:#1B2B4B;flex-direction:column;padding:16px 24px;gap:16px}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+}
+
+/* HERO */
+.hero{background:#1B2B4B;padding:80px 32px;text-align:center;color:white}
+.hero h1{font-size:34px;font-weight:600;margin-bottom:16px;line-height:1.3}
+.hero p{font-size:16px;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 36px;line-height:1.7}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{background:white;color:#1B2B4B;padding:13px 28px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:opacity 0.2s}
+.btn-outline{background:transparent;color:white;padding:13px 28px;border-radius:8px;font-size:14px;font-weight:600;border:1.5px solid rgba(255,255,255,0.4);cursor:pointer;transition:background 0.2s}
+.btn-white:hover{opacity:0.9}
+.btn-outline:hover{background:rgba(255,255,255,0.1)}
+
+/* SECTIONS */
+.section{padding:64px 32px}
+.section.gray{background:#F8FAFC}
+.section-inner{max-width:900px;margin:0 auto}
+.section-title{text-align:center;margin-bottom:48px}
+.section-title h2{font-size:26px;font-weight:600;color:#1B2B4B;margin-bottom:10px}
+.section-title p{font-size:15px;color:#64748B;max-width:480px;margin:0 auto;line-height:1.6}
+
+/* HİZMETLER */
+.hizmet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:640px){.hizmet-grid{grid-template-columns:1fr}}
+@media(min-width:641px) and (max-width:900px){.hizmet-grid{grid-template-columns:repeat(2,1fr)}}
+.hizmet-kart{background:white;border:1px solid #E2E8F0;border-radius:12px;padding:24px;transition:box-shadow 0.2s}
+.hizmet-kart:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08)}
+.hizmet-ikon{font-size:28px;margin-bottom:14px}
+.hizmet-kart h3{font-size:15px;font-weight:600;color:#1B2B4B;margin-bottom:8px}
+.hizmet-kart p{font-size:13px;color:#64748B;line-height:1.6}
+
+/* SAYILAR */
+.sayilar{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+@media(max-width:480px){.sayilar{grid-template-columns:1fr;gap:16px}}
+.sayi h3{font-size:40px;font-weight:700;color:#1B2B4B}
+.sayi p{font-size:14px;color:#64748B;margin-top:6px}
+
+/* HAKKIMIZDA */
+.hakkimizda{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:640px){.hakkimizda{grid-template-columns:1fr}}
+.hakkimizda-gorsel{background:#EFF6FF;border-radius:16px;padding:48px;text-align:center;font-size:80px}
+.hakkimizda-text h2{font-size:24px;font-weight:600;color:#1B2B4B;margin-bottom:14px}
+.hakkimizda-text p{font-size:14px;color:#64748B;line-height:1.7;margin-bottom:14px}
+.btn-primary{display:inline-block;background:#1B2B4B;color:white;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:pointer;margin-top:6px}
+
+/* İLETİŞİM */
+.iletisim-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:640px){.iletisim-grid{grid-template-columns:1fr}}
+.iletisim-bilgi{display:flex;flex-direction:column;gap:20px}
+.iletisim-satir{display:flex;align-items:flex-start;gap:14px}
+.iletisim-ikon{width:44px;height:44px;background:#EFF6FF;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.iletisim-satir p{font-size:12px;color:#94A3B8;margin-bottom:3px}
+.iletisim-satir h4{font-size:14px;font-weight:500;color:#1B2B4B}
+
+/* FORM */
+.form-kart{background:white;border:1px solid #E2E8F0;border-radius:12px;padding:28px}
+.form-kart h3{font-size:16px;font-weight:600;color:#1B2B4B;margin-bottom:20px}
+.form-group{margin-bottom:14px}
+.form-group input,.form-group textarea{width:100%;border:1px solid #E2E8F0;border-radius:8px;padding:11px 14px;font-size:14px;outline:none;transition:border-color 0.2s;font-family:inherit;background:#F8FAFC}
+.form-group input:focus,.form-group textarea:focus{border-color:#1B2B4B;background:white}
+.form-group textarea{height:110px;resize:none}
+.form-btn{width:100%;background:#1B2B4B;color:white;border:none;border-radius:8px;padding:13px;font-size:14px;font-weight:600;cursor:pointer;transition:opacity 0.2s}
+.form-btn:hover{opacity:0.9}
+.form-note{font-size:12px;color:#94A3B8;text-align:center;margin-top:10px}
+
+/* FOOTER */
+footer{background:#1B2B4B;color:rgba(255,255,255,0.6);text-align:center;padding:28px 32px}
+footer .footer-logo{color:white;font-size:16px;font-weight:600;margin-bottom:8px}
+footer p{font-size:13px}
+footer a{color:rgba(255,255,255,0.6)}
+
+/* WA BUTONU */
+.wa-fixed{position:fixed;bottom:24px;right:24px;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 16px rgba(37,211,102,0.5);cursor:pointer;z-index:200;text-decoration:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="logo-box">CAN</div>
+    <span class="logo-text">Mali Müşavirlik</span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+    <a href="https://wa.me/905321422839" class="nav-wa" target="_blank">WhatsApp</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Güvenilir Mali Müşavirlik<br>Hizmetleri</h1>
+  <p>İşletmenizin finansal geleceğini güvence altına alıyoruz. Vergi, muhasebe ve mali danışmanlık konularında profesyonel destek.</p>
+  <div class="hero-btns">
+    <a href="#hizmetler" class="btn-white">Hizmetlerimiz</a>
+    <a href="https://wa.me/905321422839" class="btn-outline" target="_blank">WhatsApp ile Ulaşın</a>
+  </div>
+</section>
+
+<!-- SAYILAR -->
+<section class="section">
+  <div class="section-inner">
+    <div class="sayilar">
+      <div class="sayi"><h3>10+</h3><p>Yıl Deneyim</p></div>
+      <div class="sayi"><h3>100+</h3><p>Mutlu Müşteri</p></div>
+      <div class="sayi"><h3>%100</h3><p>Zamanında Beyanname</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HİZMETLER -->
+<section class="section gray" id="hizmetler">
+  <div class="section-inner">
+    <div class="section-title">
+      <h2>Hizmetlerimiz</h2>
+      <p>İşletmenizin tüm mali ihtiyaçlarına kapsamlı çözümler sunuyoruz</p>
+    </div>
+    <div class="hizmet-grid">
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">📊</div>
+        <h3>Muhasebe ve Defter Tutma</h3>
+        <p>Yasal defterlerin tutulması, mali tabloların hazırlanması ve dönemsel raporlama hizmetleri.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">📋</div>
+        <h3>Vergi Beyannameleri</h3>
+        <p>KDV, Muhtasar, Kurumlar ve Gelir Vergisi beyannamelerinin zamanında eksiksiz hazırlanması.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">🏢</div>
+        <h3>Şirket Kuruluşu</h3>
+        <p>Limited ve anonim şirket kuruluş işlemleri, vergi dairesi ve SGK kayıt hizmetleri.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">👥</div>
+        <h3>SGK ve Bordro</h3>
+        <p>Personel bordro hesaplama, SGK bildirgelerinin hazırlanması ve aylık takibi.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">💰</div>
+        <h3>Mali Danışmanlık</h3>
+        <p>Yatırım kararlarında vergi planlaması ve işletmenize özel finansal stratejik danışmanlık.</p>
+      </div>
+      <div class="hizmet-kart">
+        <div class="hizmet-ikon">📑</div>
+        <h3>e-Defter ve e-Fatura</h3>
+        <p>Elektronik defter ve fatura süreçlerinin yönetimi, GİB portal entegrasyonu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HAKKIMIZDA -->
+<section class="section" id="hakkimizda">
+  <div class="section-inner">
+    <div class="hakkimizda">
+      <div class="hakkimizda-gorsel">🏛️</div>
+      <div class="hakkimizda-text">
+        <h2>Hakkımızda</h2>
+        <p>CAN Mali Müşavirlik olarak, işletmelerin mali süreçlerini kolaylaştırmak ve onlara güvenilir bir finansal ortak olmak amacıyla kurulduk.</p>
+        <p>Serbest Muhasebeci Mali Müşavir Ümit Can önderliğinde, uzman ekibimizle İstanbul'da faaliyet göstermekteyiz. Müşterilerimize sadece rakamları değil, doğru kararları sunuyoruz.</p>
+        <a href="#iletisim" class="btn-primary">Bize Ulaşın</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section class="section gray" id="iletisim">
+  <div class="section-inner">
+    <div class="section-title">
+      <h2>İletişim</h2>
+      <p>Size en kısa sürede dönüş yapacağız</p>
+    </div>
+    <div class="iletisim-grid">
+      <div class="iletisim-bilgi">
+        <div class="iletisim-satir">
+          <div class="iletisim-ikon">📍</div>
+          <div><p>Adres</p><h4>İstanbul, Türkiye</h4></div>
+        </div>
+        <div class="iletisim-satir">
+          <div class="iletisim-ikon">📞</div>
+          <div><p>Telefon</p><h4><a href="tel:+905321422839">0532 142 28 39</a></h4></div>
+        </div>
+        <div class="iletisim-satir">
+          <div class="iletisim-ikon">✉️</div>
+          <div><p>E-posta</p><h4><a href="mailto:info@canmalimusavirlik.com.tr">info@canmalimusavirlik.com.tr</a></h4></div>
+        </div>
+        <div class="iletisim-satir">
+          <div class="iletisim-ikon">🕐</div>
+          <div><p>Çalışma Saatleri</p><h4>Pazartesi - Cuma: 09:00 - 18:00</h4></div>
+        </div>
+        <div class="iletisim-satir">
+          <div class="iletisim-ikon">💬</div>
+          <div><p>WhatsApp</p><h4><a href="https://wa.me/905321422839" target="_blank">Hemen Yazın</a></h4></div>
+        </div>
+      </div>
+      <div class="form-kart">
+        <h3>Mesaj Gönderin</h3>
+        <form action="https://formspree.io/f/FORM_ID" method="POST">
+          <div class="form-group">
+            <input type="text" name="isim" placeholder="Adınız Soyadınız" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="telefon" placeholder="Telefon Numaranız">
+          </div>
+          <div class="form-group">
+            <textarea name="mesaj" placeholder="Mesajınız..." required></textarea>
+          </div>
+          <button type="submit" class="form-btn">Mesaj Gönder</button>
+          <p class="form-note">Mesajınız doğrudan e-postanıza iletilir</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">CAN Mali Müşavirlik</div>
+  <p>© 2026 canmalimusavirlik.com.tr — Tüm hakları saklıdır.</p>
+  <p style="margin-top:8px"><a href="tel:+905321422839">0532 142 28 39</a> &nbsp;|&nbsp; <a href="mailto:info@canmalimusavirlik.com.tr">info@canmalimusavirlik.com.tr</a></p>
+</footer>
+
+<!-- WhatsApp sabit butonu -->
+<a href="https://wa.me/905321422839" class="wa-fixed" target="_blank" title="WhatsApp ile yazın">💬</a>
+
+<script>
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
