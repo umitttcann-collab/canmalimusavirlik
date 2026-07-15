@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KVKK ve Gizlilik Politikası | CAN Mali Müşavirlik</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#0F172A;background:#fff;line-height:1.7}
+.nav{background:#fff;border-bottom:1px solid #E2E8F0;padding:16px 48px}
+.nav a{color:#1B2B4B;text-decoration:none;font-size:14px;font-weight:600}
+.icerik{max-width:760px;margin:0 auto;padding:48px 24px}
+h1{font-size:26px;color:#1B2B4B;margin-bottom:8px}
+.tarih{font-size:13px;color:#94A3B8;margin-bottom:32px}
+h2{font-size:18px;color:#1B2B4B;margin:28px 0 10px}
+p,li{font-size:14px;color:#374151;margin-bottom:12px}
+ul{padding-left:22px;margin-bottom:16px}
+.footer{background:#1B2B4B;color:rgba(255,255,255,0.6);text-align:center;padding:24px;font-size:13px;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="nav"><a href="index.html">← Ana Sayfaya Dön</a></div>
+<div class="icerik">
+<h1>KVKK Aydınlatma Metni ve Gizlilik Politikası</h1>
+<p class="tarih">Son güncelleme: Temmuz 2026</p>
+
+<h2>1. Veri Sorumlusu</h2>
+<p>Bu web sitesi (canmalimusavirlik.com.tr), CAN Mali Müşavirlik — SMMM Ümit Can tarafından işletilmektedir. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla hareket etmekteyiz.</p>
+
+<h2>2. Toplanan Kişisel Veriler</h2>
+<p>Web sitemizdeki iletişim formu aracılığıyla yalnızca şu bilgiler toplanır:</p>
+<ul>
+<li>Ad ve soyad</li>
+<li>Telefon numarası</li>
+<li>E-posta adresi</li>
+<li>Mesaj içeriğinde paylaşmayı tercih ettiğiniz bilgiler</li>
+</ul>
+
+<h2>3. Verilerin İşlenme Amacı</h2>
+<p>Toplanan veriler yalnızca şu amaçlarla kullanılır:</p>
+<ul>
+<li>Talebinize dönüş yapmak ve iletişim kurmak</li>
+<li>Hizmetlerimiz hakkında bilgi vermek</li>
+</ul>
+<p>Verileriniz pazarlama amaçlı kullanılmaz, üçüncü kişilerle paylaşılmaz ve satılmaz.</p>
+
+<h2>4. Verilerin Saklanması</h2>
+<p>İletişim formu ile gönderilen veriler, form altyapı sağlayıcısı (Formspree) üzerinden e-posta adresimize iletilir. Veriler, iletişim amacı sona erdikten sonra makul süre içinde silinir.</p>
+
+<h2>5. Çerezler</h2>
+<p>Web sitemiz zorunlu teknik çerezler dışında çerez kullanmamaktadır. Ziyaretçi takibi veya reklam amaçlı çerez bulunmamaktadır.</p>
+
+<h2>6. Haklarınız</h2>
+<p>KVKK'nın 11. maddesi kapsamında; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme haklarına sahipsiniz. Talepleriniz için:</p>
+<ul>
+<li>E-posta: info@canmalimusavirlik.com.tr</li>
+<li>Telefon: 0545 738 10 03</li>
+</ul>
+
+<h2>7. Mali Müşavirlik Hizmetlerinde Gizlilik</h2>
+<p>Müşterilerimize ait tüm mali bilgi ve belgeler, 3568 sayılı Serbest Muhasebeci Mali Müşavirlik Kanunu kapsamındaki meslek sırrı yükümlülüğü çerçevesinde korunur ve hiçbir koşulda üçüncü kişilerle paylaşılmaz.</p>
+</div>
+<div class="footer">© 2026 CAN Mali Müşavirlik — canmalimusavirlik.com.tr</div>
+</body>
+</html>
