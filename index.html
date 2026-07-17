@@ -27,37 +27,37 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;color:#0F172A;background:#fff;line-height:1.6}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;color:#101820;background:#fff;line-height:1.6}
 a{text-decoration:none;color:inherit}
 
 /* NAV */
-nav{background:#FFFFFF;padding:0 48px;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;height:70px;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+nav{background:#FFFFFF;padding:0 48px;border-bottom:1px solid #E1E4E8;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;height:70px;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
 .logo img{height:64px;display:block}
 .nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{color:#1B2B4B;font-size:14px;font-weight:500;transition:color 0.2s;letter-spacing:0.02em}
-.nav-links a:hover{color:#243A63}
+.nav-links a{color:#00338D;font-size:14px;font-weight:500;transition:color 0.2s;letter-spacing:0.02em}
+.nav-links a:hover{color:#1E49E2}
 .nav-wa{background:#25D366;color:white!important;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hamburger span{width:24px;height:2px;background:#1B2B4B;border-radius:2px;display:block}
+.hamburger span{width:24px;height:2px;background:#00338D;border-radius:2px;display:block}
 @media(max-width:768px){
   nav{padding:0 20px}
-  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#1B2B4B;flex-direction:column;padding:20px 24px;gap:20px;box-shadow:0 4px 12px rgba(0,0,0,0.2)}
+  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#00338D;flex-direction:column;padding:20px 24px;gap:20px;box-shadow:0 4px 12px rgba(0,0,0,0.2)}
   .nav-links.open{display:flex;background:white}
   .hamburger{display:flex}
 }
 
 /* HERO */
-.hero{background:#1B2B4B;padding:96px 48px 80px;color:white;position:relative;overflow:hidden}
+.hero{background:#00338D;padding:96px 48px 80px;color:white;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:linear-gradient(135deg,transparent,rgba(255,255,255,0.03));pointer-events:none}
 .hero-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 @media(max-width:768px){.hero-inner{grid-template-columns:1fr;gap:32px}.hero{padding:64px 20px}}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:rgba(255,255,255,0.85);margin-bottom:20px}
 .hero h1{font-size:38px;font-weight:700;line-height:1.25;margin-bottom:18px;letter-spacing:-0.5px}
-.hero h1 span{color:#93C5FD}
+.hero h1 span{color:#7FA8FF}
 .hero p{font-size:16px;color:rgba(255,255,255,0.72);line-height:1.75;margin-bottom:32px;max-width:440px}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn-white{background:white;color:#1B2B4B;padding:13px 28px;border-radius:8px;font-size:14px;font-weight:700;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
-.btn-white:hover{background:#F1F5F9;transform:translateY(-1px)}
+.btn-white{background:white;color:#00338D;padding:13px 28px;border-radius:8px;font-size:14px;font-weight:700;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
+.btn-white:hover{background:#EEF0F3;transform:translateY(-1px)}
 .btn-outline{background:transparent;color:white;padding:13px 28px;border-radius:8px;font-size:14px;font-weight:600;border:1.5px solid rgba(255,255,255,0.35);transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
 .btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.6)}
 .hero-cards{display:flex;flex-direction:column;gap:12px}
@@ -67,43 +67,43 @@ nav{background:#FFFFFF;padding:0 48px;border-bottom:1px solid #E2E8F0;display:fl
 .hero-card p{font-size:12px;color:rgba(255,255,255,0.6)}
 
 /* SAYILAR */
-.sayilar-bolum{background:#F8FAFC;padding:48px;border-bottom:1px solid #E2E8F0}
+.sayilar-bolum{background:#F5F6F8;padding:48px;border-bottom:1px solid #E1E4E8}
 .sayilar{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:900px;margin:0 auto;text-align:center}
 @media(max-width:640px){.sayilar{grid-template-columns:repeat(2,1fr)}.sayilar-bolum{padding:40px 20px}}
-.sayi h3{font-size:42px;font-weight:700;color:#1B2B4B;line-height:1}
-.sayi p{font-size:13px;color:#64748B;margin-top:8px;font-weight:500}
+.sayi h3{font-size:42px;font-weight:700;color:#00338D;line-height:1}
+.sayi p{font-size:13px;color:#5A6270;margin-top:8px;font-weight:500}
 
 /* SECTIONS */
 .section{padding:80px 48px}
 @media(max-width:768px){.section{padding:56px 20px}}
-.section.gray{background:#F8FAFC}
+.section.gray{background:#F5F6F8}
 .inner{max-width:1000px;margin:0 auto}
 .section-title{text-align:center;margin-bottom:56px}
-.section-title .badge{display:inline-block;background:#EFF6FF;color:#1e40af;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:12px;letter-spacing:0.04em}
-.section-title h2{font-size:30px;font-weight:700;color:#1B2B4B;margin-bottom:12px;letter-spacing:-0.3px}
-.section-title p{font-size:15px;color:#64748B;max-width:500px;margin:0 auto;line-height:1.7}
+.section-title .badge{display:inline-block;background:#EAF0FB;color:#00338D;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:12px;letter-spacing:0.04em}
+.section-title h2{font-size:30px;font-weight:700;color:#00338D;margin-bottom:12px;letter-spacing:-0.3px}
+.section-title p{font-size:15px;color:#5A6270;max-width:500px;margin:0 auto;line-height:1.7}
 
 /* HİZMETLER */
 .hizmet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:900px){.hizmet-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.hizmet-grid{grid-template-columns:1fr}}
-.hizmet-kart{background:white;border:1px solid #E8EDF5;border-radius:14px;padding:28px;transition:all 0.25s;position:relative;overflow:hidden}
-.hizmet-kart::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#1B2B4B;transform:scaleX(0);transition:transform 0.25s;transform-origin:left}
-.hizmet-kart:hover{box-shadow:0 8px 24px rgba(0,0,0,0.09);transform:translateY(-2px);border-color:#CBD5E1}
+.hizmet-kart{background:white;border:1px solid #E1E4E8;border-radius:14px;padding:28px;transition:all 0.25s;position:relative;overflow:hidden}
+.hizmet-kart::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#00338D;transform:scaleX(0);transition:transform 0.25s;transform-origin:left}
+.hizmet-kart:hover{box-shadow:0 8px 24px rgba(0,0,0,0.09);transform:translateY(-2px);border-color:#C7CCD3}
 .hizmet-kart:hover::after{transform:scaleX(1)}
-.hizmet-ikon{width:52px;height:52px;background:#EFF6FF;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
-.hizmet-kart h3{font-size:15px;font-weight:700;color:#1B2B4B;margin-bottom:10px}
-.hizmet-kart p{font-size:13px;color:#64748B;line-height:1.65}
+.hizmet-ikon{width:52px;height:52px;background:#EAF0FB;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
+.hizmet-kart h3{font-size:15px;font-weight:700;color:#00338D;margin-bottom:10px}
+.hizmet-kart p{font-size:13px;color:#5A6270;line-height:1.65}
 
 /* NEDEN BİZ */
 .neden-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 @media(max-width:768px){.neden-grid{grid-template-columns:1fr}}
 .neden-liste{display:flex;flex-direction:column;gap:20px}
 .neden-item{display:flex;gap:16px;align-items:flex-start}
-.neden-check{width:40px;height:40px;background:#EFF6FF;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;margin-top:2px}
-.neden-item h4{font-size:15px;font-weight:700;color:#1B2B4B;margin-bottom:5px}
-.neden-item p{font-size:13px;color:#64748B;line-height:1.6}
-.neden-gorsel{background:#1B2B4B;border-radius:20px;padding:40px;color:white}
+.neden-check{width:40px;height:40px;background:#EAF0FB;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;margin-top:2px}
+.neden-item h4{font-size:15px;font-weight:700;color:#00338D;margin-bottom:5px}
+.neden-item p{font-size:13px;color:#5A6270;line-height:1.6}
+.neden-gorsel{background:#00338D;border-radius:20px;padding:40px;color:white}
 .neden-gorsel h3{font-size:22px;font-weight:700;margin-bottom:8px}
 .neden-gorsel p{font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:24px;line-height:1.6}
 .neden-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -114,29 +114,29 @@ nav{background:#FFFFFF;padding:0 48px;border-bottom:1px solid #E2E8F0;display:fl
 /* İLETİŞİM */
 .iletisim-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
 @media(max-width:768px){.iletisim-grid{grid-template-columns:1fr}}
-.iletisim-bilgi h3{font-size:22px;font-weight:700;color:#1B2B4B;margin-bottom:8px}
-.iletisim-bilgi p{font-size:14px;color:#64748B;margin-bottom:28px;line-height:1.6}
+.iletisim-bilgi h3{font-size:22px;font-weight:700;color:#00338D;margin-bottom:8px}
+.iletisim-bilgi p{font-size:14px;color:#5A6270;margin-bottom:28px;line-height:1.6}
 .iletisim-liste{display:flex;flex-direction:column;gap:18px}
 .iletisim-satir{display:flex;align-items:center;gap:14px}
-.iletisim-ikon{width:46px;height:46px;background:#EFF6FF;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.iletisim-satir-text p{font-size:11px;color:#94A3B8;margin-bottom:2px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
-.iletisim-satir-text h4{font-size:15px;font-weight:600;color:#1B2B4B}
-.iletisim-satir-text a{color:#1B2B4B}
-.form-kart{background:white;border:1px solid #E2E8F0;border-radius:16px;padding:36px;box-shadow:0 4px 24px rgba(0,0,0,0.06)}
-.form-kart h3{font-size:18px;font-weight:700;color:#1B2B4B;margin-bottom:6px}
-.form-kart p{font-size:13px;color:#64748B;margin-bottom:24px}
+.iletisim-ikon{width:46px;height:46px;background:#EAF0FB;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.iletisim-satir-text p{font-size:11px;color:#8A93A0;margin-bottom:2px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
+.iletisim-satir-text h4{font-size:15px;font-weight:600;color:#00338D}
+.iletisim-satir-text a{color:#00338D}
+.form-kart{background:white;border:1px solid #E1E4E8;border-radius:16px;padding:36px;box-shadow:0 4px 24px rgba(0,0,0,0.06)}
+.form-kart h3{font-size:18px;font-weight:700;color:#00338D;margin-bottom:6px}
+.form-kart p{font-size:13px;color:#5A6270;margin-bottom:24px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 @media(max-width:480px){.form-row{grid-template-columns:1fr}}
 .form-group{margin-bottom:12px}
-.form-group input,.form-group textarea,.form-group select{width:100%;border:1.5px solid #E2E8F0;border-radius:8px;padding:12px 14px;font-size:14px;outline:none;transition:border-color 0.2s;font-family:inherit;background:white;color:#0F172A}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#1B2B4B;box-shadow:0 0 0 3px rgba(27,43,75,0.08)}
+.form-group input,.form-group textarea,.form-group select{width:100%;border:1.5px solid #E1E4E8;border-radius:8px;padding:12px 14px;font-size:14px;outline:none;transition:border-color 0.2s;font-family:inherit;background:white;color:#101820}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#00338D;box-shadow:0 0 0 3px rgba(0,51,141,0.12)}
 .form-group textarea{height:120px;resize:none}
-.form-btn{width:100%;background:#1B2B4B;color:white;border:none;border-radius:8px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.2s;letter-spacing:0.02em}
-.form-btn:hover{background:#243A63;transform:translateY(-1px)}
-.form-note{font-size:12px;color:#94A3B8;text-align:center;margin-top:12px}
+.form-btn{width:100%;background:#00338D;color:white;border:none;border-radius:8px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.2s;letter-spacing:0.02em}
+.form-btn:hover{background:#1E49E2;transform:translateY(-1px)}
+.form-note{font-size:12px;color:#8A93A0;text-align:center;margin-top:12px}
 
 /* FOOTER */
-footer{background:#1B2B4B;color:rgba(255,255,255,0.6);padding:48px}
+footer{background:#00338D;color:rgba(255,255,255,0.6);padding:48px}
 .footer-inner{max-width:1000px;margin:0 auto}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.1)}
 @media(max-width:640px){.footer-top{grid-template-columns:1fr;gap:32px}}
@@ -151,6 +151,43 @@ footer{background:#1B2B4B;color:rgba(255,255,255,0.6);padding:48px}
 /* WA */
 .wa-fixed{position:fixed;bottom:28px;right:28px;background:#25D366;color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 20px rgba(37,211,102,0.45);cursor:pointer;z-index:200;transition:transform 0.2s}
 .wa-fixed:hover{transform:scale(1.08)}
+</style>
+<style>
+/* KPMG tarzı: keskin, düz, kurumsal */
+*{border-radius:0!important}
+.wa-fixed{border-radius:50%!important}
+body{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif}
+h1,h2,h3,h4{letter-spacing:-0.2px}
+.hero{background:#00338D;padding:110px 48px 90px}
+.hero::before{display:none}
+.hero h1{font-size:44px;font-weight:700;line-height:1.15}
+.hero h1 span{color:#7FA8FF;font-style:normal}
+.hero-badge{background:transparent;border:none;padding:0 0 0 14px;border-left:3px solid #1E49E2!important;color:#C9D8FF;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600}
+.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);backdrop-filter:none}
+.btn-white{background:#fff;color:#00338D;font-weight:700}
+.btn-white:hover{transform:none;background:#EAF0FB}
+.btn-outline{border:1px solid rgba(255,255,255,0.6)}
+.btn-outline:hover{transform:none;background:#fff;color:#00338D}
+.sayilar-bolum{background:#fff;border-top:none;border-bottom:1px solid #E1E4E8}
+.sayi h3{font-family:inherit;color:#00338D;font-weight:700}
+.section-title{text-align:left;margin-bottom:48px}
+.section-title p{margin:0}
+.section-title .badge{background:transparent;color:#00338D;padding:0 0 0 12px;border-left:3px solid #1E49E2;text-transform:uppercase;letter-spacing:0.1em}
+.section-title h2{font-size:32px}
+.hizmet-kart{border:1px solid #E1E4E8;border-top:3px solid #00338D;transition:border-color .2s,box-shadow .2s}
+.hizmet-kart:hover{transform:none;box-shadow:0 6px 20px rgba(16,24,32,0.08);border-top-color:#1E49E2}
+.hizmet-kart::after{display:none}
+.hizmet-ikon{background:#EAF0FB}
+.neden-gorsel{background:#0C233C}
+.neden-stat{border:1px solid rgba(255,255,255,0.15);background:transparent}
+.form-kart{border:1px solid #E1E4E8;box-shadow:none;border-top:3px solid #00338D}
+.form-btn{background:#00338D;letter-spacing:0.04em}
+.form-btn:hover{background:#1E49E2;transform:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#1E49E2;box-shadow:none}
+footer{background:#0C233C}
+nav{box-shadow:none;border-bottom:1px solid #E1E4E8}
+.nav-links a:hover{color:#1E49E2}
+a.btn-white,a.btn-outline{border-radius:0!important}
 </style>
 </head>
 <body>
@@ -307,12 +344,12 @@ footer{background:#1B2B4B;color:rgba(255,255,255,0.6);padding:48px}
       <h2>Bizi Tanıyın</h2>
       <p>Profesyonel ve güvenilir mali müşavirlik hizmetleri için doğru adrestesiniz</p>
     </div>
-    <div style="background:white;border:1px solid #E2E8F0;border-radius:16px;padding:40px;max-width:720px;margin:0 auto;text-align:center">
-      <div style="width:80px;height:80px;background:#EFF6FF;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 20px">👤</div>
-      <h3 style="font-size:22px;font-weight:700;color:#1B2B4B;margin-bottom:6px">Ümit Can</h3>
-      <p style="font-size:14px;color:#1B2B4B;font-weight:600;margin-bottom:20px;background:#EFF6FF;display:inline-block;padding:4px 16px;border-radius:20px">Serbest Muhasebeci Mali Müşavir (SMMM)</p>
-      <p style="font-size:15px;color:#64748B;line-height:1.8;max-width:560px;margin:0 auto 24px">Yeni şirket kuranlardan yıllardır işletme yönetenlere kadar farklı büyüklükte pek çok müşteriyle çalışıyoruz. İstanbul merkezli çalışıyor, e-beyanname ve dijital süreçlerle Türkiye'nin her yerine hizmet veriyoruz.</p>
-      <a href="#iletisim" style="display:inline-block;background:#1B2B4B;color:white;padding:12px 28px;border-radius:8px;font-size:14px;font-weight:700">İletişime Geçin</a>
+    <div style="background:white;border:1px solid #E1E4E8;border-radius:16px;padding:40px;max-width:720px;margin:0 auto;text-align:center">
+      <div style="width:80px;height:80px;background:#EAF0FB;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 20px">👤</div>
+      <h3 style="font-size:22px;font-weight:700;color:#00338D;margin-bottom:6px">Ümit Can</h3>
+      <p style="font-size:14px;color:#00338D;font-weight:600;margin-bottom:20px;background:#EAF0FB;display:inline-block;padding:4px 16px;border-radius:20px">Serbest Muhasebeci Mali Müşavir (SMMM)</p>
+      <p style="font-size:15px;color:#5A6270;line-height:1.8;max-width:560px;margin:0 auto 24px">Yeni şirket kuranlardan yıllardır işletme yönetenlere kadar farklı büyüklükte pek çok müşteriyle çalışıyoruz. İstanbul merkezli çalışıyor, e-beyanname ve dijital süreçlerle Türkiye'nin her yerine hizmet veriyoruz.</p>
+      <a href="#iletisim" style="display:inline-block;background:#00338D;color:white;padding:12px 28px;border-radius:8px;font-size:14px;font-weight:700">İletişime Geçin</a>
     </div>
   </div>
 </section>
@@ -329,46 +366,46 @@ footer{background:#1B2B4B;color:rgba(255,255,255,0.6);padding:48px}
     <div style="max-width:720px;margin:0 auto">
       <div class="sss-item" onclick="sssToggle(this)">
         <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
-          <h3 style="font-size:15px;font-weight:600;color:#1B2B4B">Şirket kurmak ne kadar sürer?</h3>
-          <span style="font-size:18px;color:#94A3B8;transition:transform 0.2s" class="sss-ok">▾</span>
+          <h3 style="font-size:15px;font-weight:600;color:#00338D">Şirket kurmak ne kadar sürer?</h3>
+          <span style="font-size:18px;color:#8A93A0;transition:transform 0.2s" class="sss-ok">▾</span>
         </div>
-        <div class="sss-cevap" style="display:none;font-size:14px;color:#64748B;line-height:1.7;padding-top:10px">Belgeler tamamlandıktan sonra şahıs firması 1-2 gün, limited şirket ve anonim şirket 3-5 iş günü içinde kurulur. Vergi dairesi ve SGK kayıtları dahil tüm süreci biz yönetiriz.</div>
+        <div class="sss-cevap" style="display:none;font-size:14px;color:#5A6270;line-height:1.7;padding-top:10px">Belgeler tamamsa şahıs firması 1-2 gün, limited şirket 3-5 iş günü içinde kurulur. Vergi dairesi ve SGK kayıtları dahil tüm süreci biz yönetiriz.</div>
       </div>
       <div class="sss-item" onclick="sssToggle(this)">
         <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
-          <h3 style="font-size:15px;font-weight:600;color:#1B2B4B">Farklı şehirdeyim, hizmet alabilir miyim?</h3>
-          <span style="font-size:18px;color:#94A3B8;transition:transform 0.2s" class="sss-ok">▾</span>
+          <h3 style="font-size:15px;font-weight:600;color:#00338D">Farklı şehirdeyim, hizmet alabilir miyim?</h3>
+          <span style="font-size:18px;color:#8A93A0;transition:transform 0.2s" class="sss-ok">▾</span>
         </div>
-        <div class="sss-cevap" style="display:none;font-size:14px;color:#64748B;line-height:1.7;padding-top:10px">Evet. e-Beyanname, e-imza ve dijital süreçler sayesinde Türkiye'nin her yerinden hizmet alabilirsiniz. Belgelerinizi WhatsApp veya e-posta ile iletmeniz yeterli.</div>
+        <div class="sss-cevap" style="display:none;font-size:14px;color:#5A6270;line-height:1.7;padding-top:10px">Evet. e-Beyanname, e-imza ve dijital süreçler sayesinde Türkiye'nin her yerinden hizmet alabilirsiniz. Belgelerinizi WhatsApp veya e-posta ile iletmeniz yeterli.</div>
       </div>
       <div class="sss-item" onclick="sssToggle(this)">
         <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
-          <h3 style="font-size:15px;font-weight:600;color:#1B2B4B">Aylık ücret neye göre belirlenir?</h3>
-          <span style="font-size:18px;color:#94A3B8;transition:transform 0.2s" class="sss-ok">▾</span>
+          <h3 style="font-size:15px;font-weight:600;color:#00338D">Aylık ücret neye göre belirlenir?</h3>
+          <span style="font-size:18px;color:#8A93A0;transition:transform 0.2s" class="sss-ok">▾</span>
         </div>
-        <div class="sss-cevap" style="display:none;font-size:14px;color:#64748B;line-height:1.7;padding-top:10px">İşletmenizin türüne (şahıs/şirket), belge sayısına ve çalışan sayısına göre belirlenir. Net fiyat için bize ulaşın, durumunuza özel teklif verelim.</div>
+        <div class="sss-cevap" style="display:none;font-size:14px;color:#5A6270;line-height:1.7;padding-top:10px">İşletmenizin türüne (şahıs/şirket), belge sayısına ve çalışan sayısına göre belirlenir. Net fiyat için bize ulaşın, durumunuza özel teklif verelim.</div>
       </div>
       <div class="sss-item" onclick="sssToggle(this)">
         <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
-          <h3 style="font-size:15px;font-weight:600;color:#1B2B4B">Hangi belgeleri saklamam gerekir?</h3>
-          <span style="font-size:18px;color:#94A3B8;transition:transform 0.2s" class="sss-ok">▾</span>
+          <h3 style="font-size:15px;font-weight:600;color:#00338D">Hangi belgeleri saklamam gerekir?</h3>
+          <span style="font-size:18px;color:#8A93A0;transition:transform 0.2s" class="sss-ok">▾</span>
         </div>
-        <div class="sss-cevap" style="display:none;font-size:14px;color:#64748B;line-height:1.7;padding-top:10px">Fatura, fiş, banka dekontu, sözleşme ve bordro gibi belgeleri 5 yıl saklamanız yasal zorunluluktur. Hangi belgenin önemli olduğunu size ayrıca bildiririz.</div>
+        <div class="sss-cevap" style="display:none;font-size:14px;color:#5A6270;line-height:1.7;padding-top:10px">Fatura, fiş, banka dekontu, sözleşme ve bordro gibi belgeleri 5 yıl saklamanız yasal zorunluluktur. Hangi belgenin önemli olduğunu size ayrıca bildiririz.</div>
       </div>
       <div class="sss-item" onclick="sssToggle(this)">
         <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
-          <h3 style="font-size:15px;font-weight:600;color:#1B2B4B">e-Fatura'ya geçmek zorunda mıyım?</h3>
-          <span style="font-size:18px;color:#94A3B8;transition:transform 0.2s" class="sss-ok">▾</span>
+          <h3 style="font-size:15px;font-weight:600;color:#00338D">e-Fatura'ya geçmek zorunda mıyım?</h3>
+          <span style="font-size:18px;color:#8A93A0;transition:transform 0.2s" class="sss-ok">▾</span>
         </div>
-        <div class="sss-cevap" style="display:none;font-size:14px;color:#64748B;line-height:1.7;padding-top:10px">Cironuz belirli sınırı aşarsa zorunlu hale gelir. Sınıra yaklaştığınızda sizi önceden uyarır, geçiş sürecini birlikte yönetiriz.</div>
+        <div class="sss-cevap" style="display:none;font-size:14px;color:#5A6270;line-height:1.7;padding-top:10px">Cironuz belirli sınırı aşarsa zorunlu hale gelir. Sınıra yaklaştığınızda sizi önceden uyarır, geçiş sürecini birlikte yönetiriz.</div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
-.sss-item{background:white;border:1px solid #E2E8F0;border-radius:12px;padding:18px 22px;margin-bottom:10px}
-.sss-item:hover{border-color:#CBD5E1}
+.sss-item{background:white;border:1px solid #E1E4E8;border-radius:12px;padding:18px 22px;margin-bottom:10px}
+.sss-item:hover{border-color:#C7CCD3}
 </style>
 
 <section class="section" id="iletisim">
